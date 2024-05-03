@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(./components/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf) format(opentype);
+    font-style: normal;
+    font-display: swap;
+}
