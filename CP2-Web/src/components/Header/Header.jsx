@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Header () {
     return (
-        <header className="w-full h-14 bg-slate-950 text-white flex items-center justify-around fixed">
+        <header className="w-full pt-5 pb-5  bg-preto_header text-white flex items-center justify-around fixed">
             <Link to="/">
                 <div className="text-3xl text-pink-600"> <SiReact /> </div>
             </Link>

@@ -7,7 +7,7 @@ function PageNotFound() {
     return ( 
         <>
 
-            <body className="bg-black h-screen p-36">
+            <body className="bg-preto_header h-screen p-36">
                 <div className=" flex justify-center text-8xl text-pink-600 p-3">
                     <BsEmojiFrownFill />
                 </div>
