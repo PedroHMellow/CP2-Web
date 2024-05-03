@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'magenta': '#ed145b',
+        'preto_header': '#151819'
+      },
       fontFamily:{ 
         Raleway: ['Raleway' , 'sans-serif']
       }
@@ -13,4 +17,5 @@ export default {
   },
   plugins: [],
 }
+
 
