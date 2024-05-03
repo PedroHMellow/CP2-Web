@@ -7,7 +7,7 @@ function PageNotFound() {
     return ( 
         <>
 
-            <body className="bg-preto_header h-screen p-36">
+            <div className="bg-preto_header h-screen p-36">
                 <div className=" flex justify-center text-8xl text-pink-600 p-3">
                     <BsEmojiFrownFill />
                 </div>
@@ -24,7 +24,7 @@ function PageNotFound() {
                         </button>
                     </Link>
                 </div>
-            </body>
+            </div>
 
         </>
         
