@@ -14,6 +14,9 @@ function Home() {
           className="w-full"
         />
       </figure>
+      
+    {/* Colocar Apretasão de equipe */}
+
       <Footer />
     </>
   );

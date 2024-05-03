@@ -4,7 +4,7 @@ function Projeto () {
     return (
         <>
             <Header />
-            <h1 className="text-8xl flex justify-center items-center p-10 py-10">Aba Projetos</h1>
+            <h1 className="text-8xl flex justify-center items-center p-10 py-10">Aba Projetos me delete e coloqui aqui</h1>
             <Footer />
         </>
     )
