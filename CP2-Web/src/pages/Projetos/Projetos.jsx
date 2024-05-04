@@ -8,7 +8,7 @@ function CardProjeto({ projeto }) {
     const toggleDetails = () => setIsOpen(!isOpen);
 
     return (
-        <div className="m-4 p-4 border rounded shadow-lg hover:bg-gray-100 cursor-pointer" onClick={toggleDetails}>
+        <div className="m-4 p-4 border rounded shadow-lg hover:bg-magenta cursor-pointer" onClick={toggleDetails}>
             <h3 className="text-lg font-bold">{projeto.nome}</h3>
             <p>{projeto.descricaoCurta}</p>
             {isOpen && (
@@ -43,20 +43,20 @@ function Projeto() {
         },
         {
             id: 4,
-            nome: 'Projeto 4',
-            descricaoCurta: 'Breve descrição do Projeto 4.',
+            nome: 'Planta IA',
+            descricaoCurta: 'Usei o conjunto de dados de doenças de plantas do Kaggle e treinei um modelo de classificador de imagens usando a estrutura PyTorch usando CNN e Transfer Learning com 38 classes de várias folhas de plantas. O modelo foi capaz de detectar com sucesso folhas doentes e saudáveis ​​de 14 plantas únicas. Consegui atingir uma precisão de 98% usando o modelo pré-treinado Resnet34.',
             imagem: 'url-da-imagem.jpg'
         },
         {
             id: 5,
-            nome: 'Projeto 5',
-            descricaoCurta: 'Breve descrição do Projeto 5.',
+            nome: 'IA para o bem social',
+            descricaoCurta: 'Utilizar Processamento de Linguagem Natural para detectar postagens relacionadas ao suicídio e ideação suicida de usuários no ciberespaço e assim ajudar na prevenção do suicídio.',
             imagem: 'url-da-imagem.jpg'
         },
         {
             id: 6,
-            nome: 'Projeto 6',
-            descricaoCurta: 'Breve descrição do Projeto 6.',
+            nome: 'Reconhecimento facial e detecção de emoções',
+            descricaoCurta: 'reinei um classificador CNN usando conjunto de dados FER-2013 com Keras e tensorflow apoiado. O classificador previu com sucesso os vários tipos de emoções humanas. E a maior precisão obtida com o modelo foi de 60,1%. Em seguida, usei o Open-CV para detectar o rosto em uma imagem e depois passar o rosto para o classificador para prever a emoção de uma pessoa..',
             imagem: 'url-da-imagem.jpg'
         },
        
