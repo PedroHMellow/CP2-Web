@@ -8,7 +8,7 @@ function CardProjeto({ projeto }) {
     const toggleDetails = () => setIsOpen(!isOpen);
 
     return (
-        <div className="m-4 p-4 border rounded-lg shadow-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-magenta hover:text-white" onClick={toggleDetails}>
+        <div className="m-4 p-4 border border-magenta rounded-lg shadow-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-magenta hover:text-black" onClick={toggleDetails}>
             <h3 className="text-lg font-bold">{projeto.nome}</h3>
             <p>{projeto.descricaoCurta}</p>
             {isOpen && (
@@ -65,11 +65,14 @@ function Projeto() {
     return (
         <>
             <Header />
-            <h1 className="text-8xl p-10  text-gray-400 flex flex-col items-start gap-10 pr-10 pl-10">Projetos</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-                {projetos.map(projeto => (
-                    <CardProjeto key={projeto.id} projeto={projeto} />
-                ))}
+            <div className='flex flex-col items-start gap-10 pr-10 pl-10'>
+                <h1 className="text-6xl ml-14 font-semibold pt-20  text-gray-400">Projetos</h1>
+                <div className='bg-magenta h-1 w-24 ml-14 mb-8'></div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto text-gray-400">
+                    {projetos.map(projeto => (
+                        <CardProjeto key={projeto.id} projeto={projeto} />
+                    ))}
+                </div>
             </div>
             <Footer />
         </>
